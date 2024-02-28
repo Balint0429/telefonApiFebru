@@ -50,4 +50,60 @@ export default function App() {
   );
 }
 
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'lightblue',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    backgroundColor: 'dodgerblue',
+    paddingVertical: 8,
+    paddingHorizontal: 8,
+    borderRadius: 3,
+    margin: 10,
+    alignItems: 'center',
+  },
+  buttonText: {
+      color: 'white',
+      fontSize: 14,
+      textTransform: 'uppercase',
+  },
+  input: {
+    backgroundColor: 'white',
+    height: 30,
+    width: '90%',
+    fontSize: 18,
+    paddingHorizontal: 8,
+  },
+  header: {
+    backgroundColor: 'gold',
+    height: 40,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+        
+  },
+  headerText: {
+    fontSize: 28,
+  },
+  body: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',    
+  },
+  label: {
+    marginTop: 10,
+    fontSize: 22,
+  },
+  footer: {
+    backgroundColor: 'navy',
+    width: '100%',
+    padding: 5,
+  },
+  footerText: {
+    color: 'white',
+    textAlign: 'center',
+  },
+});
