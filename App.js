@@ -7,7 +7,9 @@ export default function App() {
   const [tomegInedx, setTestTomegIndex] = useState('')
 
   function calcTestTomegIndex() {
-    let res = weight / Math.pow(height, 2);
+    let heightM = height /100
+    let res = weight / Math.pow(heightM, 2);
+    res = res.toFixed(2);
     setTestTomegIndex(res)
     setWeight('')
     setHeight('')
@@ -21,12 +23,12 @@ export default function App() {
 
 
       <View style={styles.body}>
-        <Text style={styles.label}>Súly</Text>
+        <Text style={styles.label}>Súly(kg)</Text>
         <TextInput
           style={styles.input}
           onChangeText={text => setWeight(text) }
         />
-        <Text style={styles.label}>Magasság</Text>
+        <Text style={styles.label}>Magasság (cm)</Text>
         <TextInput
           style={styles.input}
           onChangeText={text => setHeight(text) }
