@@ -4,11 +4,10 @@ import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 export default function App() {
   const [weight, setWeight] = useState('')
   const [height, setHeight] = useState('')
-  const [result, setTestTomegIndex] = useState('')
+  const [tomegInedx, setTestTomegIndex] = useState('')
 
   function calcTestTomegIndex() {
-    let heightM = height /10
-    let res = weight / Math.pow(heightM, );
+    let res = weight / Math.pow(height, 2);
     setTestTomegIndex(res)
     setWeight('')
     setHeight('')
@@ -38,15 +37,15 @@ export default function App() {
         <Text style={styles.label}>Testtömegindex</Text>
         <TextInput
           style={styles.input}
-          value={result}
+          value={tomegInedx}
         />      
       </View>
 
       <View style={styles.footer}>
-        <Text style={styles.footerText}>Sallai András, 2024</Text>
+        <Text style={styles.footerText}>Laczkó Bálint, 2024</Text>
       </View>
   
-    </View> //gyökér záró
+    </View> 
   );
 }
 
@@ -78,7 +77,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
   },
   header: {
-    backgroundColor: 'gold',
+    backgroundColor: 'grey',
     height: 40,
     width: '100%',
     alignItems: 'center',
@@ -98,7 +97,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
   },
   footer: {
-    backgroundColor: 'navy',
+    backgroundColor: 'grey',
     width: '100%',
     padding: 5,
   },
