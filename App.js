@@ -39,7 +39,7 @@ export default function App() {
         <Text style={styles.label}>Testtömegindex</Text>
         <TextInput
           style={styles.input}
-          value={tomegInedx}
+          value={tomegInedx !== '' ? `${tomegInedx} kg/m²` : ''}
         />      
       </View>
 
